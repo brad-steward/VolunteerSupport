@@ -8,7 +8,7 @@ Run the following commands to get this going!
 
 ##### Clone the repo
 ```sh
-$ git clone https://github.com/labdelqader/gulpseed.git
+$ git clone https://github.com/brad-steward/VolunteerSupport.git
 ```
 ##### Run the NPM install
 ```sh
