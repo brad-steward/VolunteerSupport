@@ -1,16 +1,23 @@
 (function() {
   'use strict';
 
-  angular.module('app', [
-    'app.expense-levels',
-    'app.project-status',
-    'app.projects',
-    'app.skills',
-    'app.search',
+  angular
+    .module('vs', [
+      'vs.projects',
+      'vs.project-status',
+      'vs.skills',
+      'vs.expense-levels',
 
-    // external //
-    'ngclipboard',
-    'ngSanitize',
-    'ngHandsontable'
-  ]);
+      // external //
+      'ngclipboard',
+      'ngSanitize',
+      'ngHandsontable',
+      'ngRoute'
+    ])
+    .config(function($routeProvider) {
+      $routeProvider;
+      when('/', {
+        templateUrl: search.tpl.html
+      });
+    });
 })();
